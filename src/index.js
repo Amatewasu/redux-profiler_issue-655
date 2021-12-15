@@ -7,7 +7,7 @@ import reducer from './reducers';
 import 'todomvc-app-css/index.css';
 import profileStore from 'redux-profiler';
 
-const store = createStore(
+export const store = createStore(
   reducer,
   undefined,
   compose(
@@ -16,9 +16,11 @@ const store = createStore(
   )
 );
 
+/*
 render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
 );
+*/
